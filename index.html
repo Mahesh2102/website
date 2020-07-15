@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
-<body>
-<p>hello world</p>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Coronavirus cases in India</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid p-5 big-light text-center my-3">
+                        <h1>Coronavirus cases in India</h1>
+            <h5>simple project using javascript and an open source api</h5>
+            <div class="container p-3">
+                <div class="row text-center">
+                    
+                    <div class="col-3 text-warning">
+                        <h5>Confirmed</h5>
+                        <p id="confirmed"></p>
+                    </div>
+                    <div class="col-3 text-info">
+                        <h5>Active</h5>
+                        <p id="active"></p>
+                    </div>
+                        <div class="col-3 text-success">
+                        <h5>Recovered</h5>
+                        <p id="recovered"></p>
+                    </div>
+                        <div class="col-3 text-danger">
+                        <h5>Deaths</h5>
+                        <p id="deaths"></p>
+                    </div>
+                </div>
+            </div>
+            <canvas id="myChart"></canvas>
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>State</th>
+                    <th>confirmed</th>
+                    <th>Active</th>
+                    <th>recovered</th>
+                    <th>deaths</th>
+                </tr>
+                </thead>
+            </table>
+            
+        </div>
 
+        
     </body>
-</html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src=""https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css""></script>
+        <script src="script.js"></script>
+</html>    
