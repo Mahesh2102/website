@@ -57,7 +57,7 @@ $(document).ready(function(){
         var myChart = document.getElementById("myChart").getContext('2d')
 
         var chart=new Chart(myChart,{
-            type:'line',
+            type:'bar',
             data:{
                 labels:state,
                 datasets:[
